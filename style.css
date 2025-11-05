@@ -68,6 +68,7 @@ li {
 }
 .hamburger {
     display: none;
+    padding-right: 40px;
 }
 .main {
     position: relative;
