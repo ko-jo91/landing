@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borded-box;
+    font-family: 'Mulish', sans-serif;
+}
+:root {
+    --black: #000000;
+    --white: #fff;
+    --purple: #7d4cde;
+    --orange: #eb911b;
+    --green: #61d71c;
+    --red:   #e91c1c;
+    --aquamarine:  #33dcce;
+
+
+}
+a {
+    list-style: none;
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+.nav--bar {
+    color: var(--white);
+    height: 50px;
+    background-color: var(--black);
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+   
+}
+.a {
+    color: var(--white);
+    font-size: 1.1rem;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 6px;
+    
+}
+.nav--logo {
+    background-color: var(--purple);
+    background-image: linear-gradient(to top, var(--purple) 30%, var(--orange) 70%);
+    padding-left: 30px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.nav--items {
+    display: flex;
+    margin-right: 30px;
+    gap: 40px;
+}
+.nav--link {
+    font-size: 1.2rem;
+    color: var(--white);
+    list-style: none;
+    text-decoration: none;
+}
+.nav--link:hover {
+    color: var(--orange);
+    transition:all 0.3s ease-in;
+
+}
+.hamburger {
+    display: none;
+}
+.main {
+    position: relative;
+    background-color: var(--black);
+    min-height: 90vh;
+    
+}
+.main::before {
+    content: "";
+    position: absolute;
+    background-image: url(images/fabrizio-conti-xPFhK0MGsyw-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    inset: 0;
+    opacity: 0.6;
+
+}
+.hero {
+    isolation: isolate;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    gap: 40px;
+    
+   
+}
+.sub--hero1 h1 {
+    padding-top: 60px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.main--hero h1 {
+    font-size: 8rem;
+    letter-spacing: 20px;
+    font-weight: 800;
+}
+.sub--hero2 h1 {
+    font-size: 1.4rem;
+    font-weight: 250;
+
+}
+.book--now {
+    font-size: 1.2rem;
+    font-weight: 100;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 15px 25px;
+}
+.book--now:hover {
+    transition: all 0.3s ease-in;
+    color: var(--black);
+    background-color: var(--white);
+    border: solid var(--black) 1px;
+}
+.mainbody {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    padding-top: 60px;
+    padding-left: 60px; 
+    padding-right: 60px; 
+    
+}
+.about h1 {
+    font-size: 3rem;
+
+}
+.para h2 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 1.2rem;
+    font-weight: 80;
+    text-wrap: wrap;
+}
+.buttons {
+    margin-top: 30px;
+}
+.read--me {
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px 25px;
+    
+}
+.consultation {
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px 25px;
+
+}
+.read--me:hover {
+    transition: all 0.3s ease-in;
+    color: var(--black);
+    background-color: var(--white);
+    border: solid var(--black) 1px;
+}
+.consultation:hover {
+    transition: all 0.3s ease-in;
+    color: var(--black);
+    background-color: var(--white);
+    border: solid var(--black) 1px;
+}
+.aqua {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.sub {
+    margin-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.how {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.placards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 50px;
+    
+}
+.free--consultation, .online--coaching, .self--improvement {
+    text-align: center;
+    border: solid var(--black) 5px;
+    width: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.free, .online, .self {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.use {
+    font-size: 1rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 70;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.use1 {
+    font-size: 1rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 70;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+.rab {
+    height: 2px;
+    width: 27px;
+    background-color: var(--white);
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+   
+}
+.bar1 {
+    display: inline-block;
+    text-align: center;
+    height: 3px;
+    width: 200px;
+    background-color: var(--black);
+    margin-bottom: 20px;
+   
+
+}
+.time, .amt, .days {
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.book--it1, .book--it2, .book--it3 {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px 5px;
+}
+.book--it1:hover, .book--it2:hover, .book--it3:hover {
+    color: var(--black);
+    background-color: var(--white);
+    border: solid var(--black) 1px;
+    transition: all 0.4s ease-in;
+}
+.book--it1 {
+    margin-top: 105px;
+    margin-bottom: 50px;
+}
+.book--it2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.book--it3 {
+    margin-top: 57px;
+    margin-bottom: 50px;
+}
+.more--services {
+    display: inline-block;
+    text-align: center;
+}
+.serv {
+    display: inline-block;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.servi {
+    font-weight: 250;
+    font-size: 1.2rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px 40px;
+}
+.servi:hover {
+    transition: all 0.3s ease-in;
+    background-color: var(--white);
+    color: var(--black);
+    border: solid var(--black) 1px;
+}
+footer {
+    background-color: var(--aquamarine);
+    padding: 20px;
+}
+.contact--and--form {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto
+}
+.con {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+.addy {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.cell {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.mail {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.logos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.copy {
+    font-size: 1rem;
+    font-weight: 100;
+}
+.pow {
+    font-size: 1rem;
+    font-weight: 100;
+}
+.nom {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.email, .subj {
+    margin-bottom: 20px;
+}
+.mess {
+    margin-bottom: 10px;
+}
+.suby {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.submit {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px 60px;
+   
+}
+.submit:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border: solid var(--black) 2px;
+    transition: all 0.4s ease-in;
+}
+.nav--open {
+    transform: translate(0) !important;
+}
+.hamburger--cross .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger--cross .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger--cross .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 1000px) {
+    .nav--menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        background-color: var(--black);
+        width: 100%;
+        padding: 10px 0 25px;
+        transform: translate(-100%);
+        transition: all 0.6s ease-in;
+        z-index: 1; 
+    }
+    .nav--items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;  
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .main {
+        padding-top: 100px;
+    }
+    .main--hero h1 {
+        font-size: 5.2rem;
+
+    }
+    .mainbody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .buttons {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about {
+        text-align: center;
+    }
+    .aqua {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+    }
+    .para {
+        margin-bottom: 50px;
+        text-wrap: wrap;
+    }
+    .sub {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .how {
+        justify-content: center;
+        align-items: center;
+    }
+    .placards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         
+    }
+    .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact--and--form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .con, .addy, .cell, .mail, .logos, .pow {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .suby {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+  
+}
+@media (max-width: 750px) {
+    .nav--menu {
+        top: 75px;
+    }
+   
+    .nav--link {
+        font-size: 1rem;
+    }
+    .sub--hero1 h1, .sub--hero2 h1 {
+        font-size: 1.1rem;
+    }
+    .main--hero h1 {
+        font-size: 4rem;
+    }
+    .book--now {
+        font-size: 1rem;
+    }
+    .about h1 {
+        font-size: 2rem;
+    }
+    .para {
+        display: flex;
+        flex-direction: column;
+        text-wrap-style: pretty;
+        margin: 0 40px;
+        font-size:1rem;
+    }
+    .para h2 {
+        font-size: 1rem;
+    }
+    .aqua {
+        width: 350px;
+    }
+  
+
+}
+@media (max-width: 550px) {
+    .nav--menu {
+        top: 90px;
+    }
+    .a {
+        font-size: 0.8rem;
+        letter-spacing: 6px;
+    }
+    .main--hero h1 {
+        font-size: 3.2rem;
+    }
+    .about h1 {
+        font-size: 1.6rem;
+    }
+    .para h2 {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 450px) {
+     .nav--menu {
+        top: 95px;
+    }
+    .main--hero h1 {
+        font-size: 2.5rem;
+    }
+    .para {
+        margin: 0 auto;
+    }
+
+    .para h2 {
+        text-wrap-style: balance;
+        text-align: center;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
