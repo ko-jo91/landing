@@ -419,6 +419,7 @@ footer {
     .hamburger {
         display: block;
         cursor: pointer;
+        padding-right: 40px;
     }
     .main {
         padding-top: 100px;
